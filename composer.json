@@ -1,0 +1,14 @@
+{
+    "name": "openchenli/demo",
+    "description": "test project",
+    "type": "project",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "chenli",
+            "email": "chenli@haituncun.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
