@@ -1,4 +1,5 @@
 /vendor/
 .idea
 database.php
+aes.php
 .env
