@@ -4,7 +4,9 @@ class Bootstrap
 {
     public static function run()
     {
+        self::setEnv();
         self::parseUrl();
+
     }
 
     public static function parseUrl()
@@ -22,5 +24,15 @@ class Bootstrap
 
         echo (new $class())->$method();
 
+    }
+
+    public static function setEnv()
+    {
+        $env = parse_ini_file(realpath(APP_PATH . '/.env'));
+        $config = include APP_PATH . '/config/config.php';
+        $config = array_merge($config, $env);
+        foreach ($config as $key => $value) {
+            putenv("$key=$value");
+        }
     }
 }

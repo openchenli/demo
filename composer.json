@@ -15,7 +15,7 @@
     },
     "autoload":{
         "files":[
-            "core/funcions.php"
+            "core/functions.php"
         ],
         "psr-4":{
             "core\\":"core",
